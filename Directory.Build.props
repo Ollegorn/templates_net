@@ -11,7 +11,7 @@
     <!-- Suppresses display of the sign-on banner -->
     <NoLogo>true</NoLogo>
     <!-- Prepend organization name to default namespace -->
-    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <RootNamespace>Ollegorn.$(MSBuildProjectName)</RootNamespace>
     <!-- Enable global usings based on project type -->
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Generate documentation file and ignore warnings for undocumented elements -->
@@ -164,10 +164,10 @@
 
   <PropertyGroup Label="Package">
     <PackageId>$(RootNamespace)</PackageId>
-    <Company>Bustrac</Company>
-    <Authors>Alexandros Kritikos,Stefanos Katsikas,Iasonas Christoulakis,Fanis Pediaditakis</Authors>
+    <Company>Ollegorn</Company>
+    <Authors>Yannis Kakouris</Authors>
     <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
-    <Copyright>Copyright © 2017-$(CurrentYear) $(Company). All rights reserved.</Copyright>
+    <Copyright>Copyright © 2024-$(CurrentYear) $(Company). All rights reserved.</Copyright>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageOutputPath>$(MSBuildThisFileDirectory)/packages</PackageOutputPath>
     <PublishDir>$(MSBuildThisFileDirectory)/upload/$(ProjectName)</PublishDir>
